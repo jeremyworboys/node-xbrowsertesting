@@ -27,6 +27,17 @@ client.listScreenshotBrowsers(config, function(err, data) {
 });
 ```
 
+## Running Tests
+
+You need to have the [Grunt](http://gruntjs.com/) binary installed.
+
+    $ npm install -g grunt-cli
+
+Then install deps and run the test suit.
+
+    $ npm install
+    $ grunt test
+
 ## License
 
 The MIT License (MIT)

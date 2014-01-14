@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/jeremyworboys/node-xbrowsertesting.git"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "keywords": [
     "cross",
     "browser",
