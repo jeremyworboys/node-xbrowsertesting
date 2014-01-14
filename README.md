@@ -1,7 +1,7 @@
 # node-xbrowsertesting
 
-[![Travis CI](http://img.shields.io/travis-ci/jeremyworboys/node-xbrowsertesting.png)](https://travis-ci.org/jeremyworboys/node-xbrowsertesting)
-[![Gittip](http://img.shields.io/gittip/jeremyworboys.png)](https://www.gittip.com/jeremyworboys/)
+[![Travis CI](https://img.shields.io/travis-ci/jeremyworboys/node-xbrowsertesting.png)](https://travis-ci.org/jeremyworboys/node-xbrowsertesting)
+[![Gittip](https://img.shields.io/gittip/jeremyworboys.png)](https://www.gittip.com/jeremyworboys/)
 
 Node client for accessing the http://crossbrowsertesting.com API
 
