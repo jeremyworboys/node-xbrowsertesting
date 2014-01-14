@@ -31,6 +31,7 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt": "~0.4.2",
     "grunt-contrib-watch": "~0.5.3",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "grunt-cli": "~0.1.11"
   }
 }
