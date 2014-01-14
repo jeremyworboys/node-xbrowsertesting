@@ -12,8 +12,11 @@ describe('Client', function() {
 
     var makeRequestStub = function(url) {
         return function(options, done) {
+            var body = { response: { error: 0, message: '' } };
+
             expect(options.url).to.equal(url);
-            done();
+
+            done(null, null, body);
         };
     };
 
