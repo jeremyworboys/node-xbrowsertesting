@@ -5,6 +5,11 @@ var xBrowserTest = require('../');
 
 describe('xBrowserTest', function() {
 
+    var config = {
+        username: 'username',
+        password: 'secretpassword'
+    };
+
     it('should expose the client version', function() {
         var pkg = require('../package.json');
 
@@ -22,13 +27,13 @@ describe('xBrowserTest', function() {
     });
 
     it('createClient should create a new instance of Client', function() {
-        var client = xBrowserTest.createClient(null);
+        var client = xBrowserTest.createClient(config);
 
         expect(client).to.be.an.instanceOf(xBrowserTest.Client);
     });
 
     it('createClient should work asynchronously', function(done) {
-        xBrowserTest.createClient(null, function(err, client) {
+        xBrowserTest.createClient(config, function(err, client) {
             expect(client).to.be.an.instanceOf(xBrowserTest.Client);
 
             done(err);
