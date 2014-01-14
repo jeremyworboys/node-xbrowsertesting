@@ -17,10 +17,17 @@
   "author": {
     "name": "Jeremy Worboys",
     "email": "jw@jeremyworboys.com"
-    },
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jeremyworboys/node-xbrowsertesting/issues"
   },
-  "homepage": "https://github.com/jeremyworboys/node-xbrowsertesting"
+  "homepage": "https://github.com/jeremyworboys/node-xbrowsertesting",
+  "devDependencies": {
+    "grunt-mocha-cli": "~1.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "chai": "~1.8.1"
+  }
 }
