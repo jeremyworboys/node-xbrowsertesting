@@ -11,4 +11,8 @@ describe('xBrowserTest', function() {
         expect(xBrowserTest.version).to.equal(pkg.version);
     });
 
+    it('should expose a `createClient` method', function() {
+        expect(xBrowserTest).itself.to.respondTo('createClient');
+    });
+
 });
