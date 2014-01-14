@@ -27,4 +27,12 @@ describe('xBrowserTest', function() {
         expect(client).to.be.an.instanceOf(xBrowserTest.Client);
     });
 
+    it('createClient should work asynchronously', function(done) {
+        xBrowserTest.createClient(null, function(err, client) {
+            expect(client).to.be.an.instanceOf(xBrowserTest.Client);
+
+            done(err);
+        });
+    });
+
 });
