@@ -11,8 +11,20 @@ describe('xBrowserTest', function() {
         expect(xBrowserTest.version).to.equal(pkg.version);
     });
 
+    it('should expose the client constructor', function() {
+        expect(xBrowserTest.Client).to.exist;
+        expect(xBrowserTest.Client).to.be.a('function');
+    });
+
     it('should expose a `createClient` method', function() {
-        expect(xBrowserTest).itself.to.respondTo('createClient');
+        expect(xBrowserTest.createClient).to.exist;
+        expect(xBrowserTest.createClient).to.be.a('function');
+    });
+
+    it('createClient should create a new instance of Client', function() {
+        var client = xBrowserTest.createClient(null);
+
+        expect(client).to.be.an.instanceOf(xBrowserTest.Client);
     });
 
 });
