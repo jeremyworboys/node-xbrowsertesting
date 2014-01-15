@@ -29,6 +29,8 @@ client.listScreenshotBrowsers(config, function(err, data) {
 
 ## Running Tests
 
+**NOTE:** For functional tests to run correctly you will need update `config` in [`test/functional/client.test.js`](https://github.com/jeremyworboys/node-xbrowsertesting/blob/master/test/functional/client.test.js).
+
     $ npm install
     $ npm test
 
