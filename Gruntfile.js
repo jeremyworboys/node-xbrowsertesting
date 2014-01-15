@@ -13,15 +13,26 @@ module.exports = function(grunt) {
             },
             gruntfile: ['Gruntfile.js'],
             lib: ['lib/*.js'],
-            test: ['test/*.js']
+            test: ['test/**/*.js']
         },
 
         mochacli: {
             options: {
-                reporter: 'dot',
-                timeout: 5000
+                reporter: 'dot'
             },
-            test: ['test/*.js']
+            unit: {
+                files: {
+                    src: ['test/*.test.js']
+                }
+            },
+            functional: {
+                options: {
+                    timeout: 5000
+                },
+                files: {
+                    src: ['test/functional/*.test.js']
+                }
+            }
         },
 
         watch: {
